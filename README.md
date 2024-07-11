@@ -1,4 +1,4 @@
-TIL   
+# TIL   
 
 >Today I Learned   
 
@@ -9,7 +9,7 @@ TIL
 ---   
 ## 카테고리   
 
-[git](git)
+[git](#git)
 
 ---
   [git](https://github.com/Bheinarl/TIL_Bheinarl/tree/master/git)
