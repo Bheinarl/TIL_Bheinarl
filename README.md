@@ -6,8 +6,9 @@ TIL
 계속 업데이트할 예정입니다.   
 나 자신 화이팅
 
+---   
+## 카테고리   
+
+[git](#git)
 ---
-# 카테고리
-[git](##git)
----
-[git](https://github.com/Bheinarl/TIL_Bheinarl/tree/master/git)
+- [git](https://github.com/Bheinarl/TIL_Bheinarl/tree/master/git)
