@@ -9,6 +9,8 @@ TIL
 ---   
 ## 카테고리   
 
-[git](#git)
+[git](git)
+
 ---
-- [git](https://github.com/Bheinarl/TIL_Bheinarl/tree/master/git)
+  [git](https://github.com/Bheinarl/TIL_Bheinarl/tree/master/git)
+  - [git 초기 설정](https://github.com/Bheinarl/TIL_Bheinarl/blob/master/git/git-%EC%B4%88%EA%B8%B0-%EC%84%A4%EC%A0%95.md)
