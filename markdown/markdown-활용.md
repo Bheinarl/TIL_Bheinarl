@@ -4,7 +4,7 @@
 
 [Heading](#Heading)   
 [List](#List)   
-[Code Block & Inline Code Block](#Code-Block-&-Inline-Code-Block)   
+[Code Block](#Code-Block)   
 [Link](#Link)   
 [Image](#Image)   
 [Text Style](#Text-Style)   
@@ -21,7 +21,7 @@
 >
 >
 ---
-## Code Block & Inline Code Block   
+## Code Block   
 >
 >
 >
