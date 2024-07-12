@@ -9,8 +9,13 @@
 ---   
 ## 카테고리   
 
-[git](#git)
-
+[git](#git)   
+[markdown](#markdown)
 ---
-  [git](https://github.com/Bheinarl/TIL_Bheinarl/tree/master/git)
-  - [git 초기 설정](https://github.com/Bheinarl/TIL_Bheinarl/blob/master/git/git-%EC%B4%88%EA%B8%B0-%EC%84%A4%EC%A0%95.md)
+[git](https://github.com/Bheinarl/TIL_Bheinarl/tree/master/git)
+  - [git 초기 설정](https://github.com/Bheinarl/TIL_Bheinarl/blob/master/git/git-%EC%B4%88%EA%B8%B0-%EC%84%A4%EC%A0%95.md)  
+  
+[markdown](https://github.com/Bheinarl/TIL_Bheinarl/tree/master/markdown)
+ - [markdown이란](https://github.com/Bheinarl/TIL_Bheinarl/blob/master/markdown/markdown.md)
+ - [markdown-활용](https://github.com/Bheinarl/TIL_Bheinarl/blob/master/markdown/markdown-%ED%99%9C%EC%9A%A9.md)
+
