@@ -5,11 +5,11 @@
 [Heading](#1-heading)   
 [List](#2-list)   
 [Code Block](#3-code-block)   
-[Link](#4.-Link)   
-[Image](#5.-Image)   
-[Text Style](#6.-Text-Style)   
-[Horizontal Line](#7.-Horizontal-Line)   
-[Block Quote](#8.-Block-Quote)
+[Link](#4-link)   
+[Image](#5-image)   
+[Text Style](#6-Text-Style)   
+[Horizontal Line](#7-Horizontal-Line)   
+[Block Quote](#8-Block-Quote)
 
 ---   
 ## 1. Heading   
