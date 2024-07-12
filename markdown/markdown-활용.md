@@ -1,7 +1,5 @@
 # Markdown 활용   
 
-## 카테고리   
-
 [Heading](#1-heading)   
 [List](#2-list)   
 [Code Block](#3-code-block)   
