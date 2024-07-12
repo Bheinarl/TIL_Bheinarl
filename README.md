@@ -12,10 +12,10 @@
 [git](#git)   
 [markdown](#markdown)
 ---
-[git](https://github.com/Bheinarl/TIL_Bheinarl/tree/master/git)
+### git
   - [git 초기 설정](https://github.com/Bheinarl/TIL_Bheinarl/blob/master/git/git-%EC%B4%88%EA%B8%B0-%EC%84%A4%EC%A0%95.md)  
   
-[markdown](https://github.com/Bheinarl/TIL_Bheinarl/tree/master/markdown)
+### markdown
  - [markdown이란](https://github.com/Bheinarl/TIL_Bheinarl/blob/master/markdown/markdown%EC%9D%B4%EB%9E%80.md)
  - [markdown-활용](https://github.com/Bheinarl/TIL_Bheinarl/blob/master/markdown/markdown-%ED%99%9C%EC%9A%A9.md)
 
