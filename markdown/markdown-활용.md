@@ -96,7 +96,7 @@
     ```
     [샘플이미지](./markdown/images/cat.jpg)
     ```
-    [샘플이미지](./markdown/images/cat.jpg)
+    [샘플이미지](./images/cat.jpg)
 ---
 ## 6. Text Style   
 - 볼드체
