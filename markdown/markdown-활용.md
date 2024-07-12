@@ -2,9 +2,9 @@
 
 ## 카테고리   
 
-[Heading](#1.-Heading)   
-[List](#2.-List)   
-[Code Block](#3.-Code-Block)   
+[Heading](#1-heading)   
+[List](#2-list)   
+[Code Block](#3-code-block)   
 [Link](#4.-Link)   
 [Image](#5.-Image)   
 [Text Style](#6.-Text-Style)   
