@@ -1,6 +1,6 @@
 #CLI 문법 및 활용
 
-[.](#)   
+[.](#.)   
 [touch](#touch)   
 [~/xxx/xxx ()](#xxxxxx-)   
 [ls](#ls)   
