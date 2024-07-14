@@ -1,6 +1,6 @@
 #CLI 문법 및 활용
 
-[.](#.)   
+[.](#current-directory)   
 [touch](#touch)   
 [~/xxx/xxx ()](#xxxxxx-)   
 [ls](#ls)   
@@ -12,7 +12,7 @@
 
 ---
 
-# .   
+# current directory   
     -  .  : 현재의 디렉토리
     -  ..  :  현재의 상위 디렉토리(부모 폴더)   
      
