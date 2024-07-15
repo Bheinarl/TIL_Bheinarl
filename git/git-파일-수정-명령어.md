@@ -1,7 +1,9 @@
 # git 파일 수정 명령어
 
-[]()
-[]()
+[이미 삭제한 commit 복구](#이미-삭제한-commit-복구)   
+[파일 내용을 수정 전으로 되돌리기](#파일-내용을-수정-전으로-되돌리기)   
+[Staging Area에 올라간 파일을 Unstage하기](#staging-area에-올라간-파일을-unstage-하기)   
+[바로 직전에 생성한 commit 수정](#바로-직전에-생성한-commit-수정)   
 
 ---
 ## 이미 삭제한 commit 복구
@@ -46,4 +48,25 @@ git reset --hard <commit id>
 
 ## 바로 직전에 생성한 commit 수정
 ### commit 메세지 수정
-- 
+```python
+git add .
+git commit -m "A"
+git commit --amend #VIM으로 진입
+`i` #입력모드
+commit 메세지 변경
+`esc`#명령모드
+`shift`+`;` #명령 입력
+wq #write & quit
+```
+### commit 내용 수정
+```python
+git add a.txt
+git commit -m "A"
+git add b.txt
+git commit --amend #VIM으로 진입 (메세지도 수정가능)
+`shift` + `;` #명령 입력
+wq #write & quit
+```
+- 언제 사용하느냐에 따라 메세지 수정 or 전체 수정
+- 협업 시에는 사용 불가
+- 불필요한 commit을 생성하지 않고, 직전 commit을 수정할 수 있기 때문에 git에서 꼭 필요한 기능 중에 하나
