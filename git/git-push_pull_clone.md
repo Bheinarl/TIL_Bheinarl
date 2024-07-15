@@ -1,6 +1,6 @@
 # git push_pull_clone
 
-[`git push`](#git-push)   
+[git push](#git-push)   
 [pull / clone](#git-push_pull_clone)
 
 ---
