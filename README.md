@@ -27,6 +27,6 @@
   - [git-파일-수정-명령어](https://github.com/Bheinarl/TIL_Bheinarl/blob/master/git/git-%ED%8C%8C%EC%9D%BC-%EC%88%98%EC%A0%95-%EB%AA%85%EB%A0%B9%EC%96%B4.md)
   
 ### markdown
- - [markdown-설명](https://github.com/Bheinarl/TIL_Bheinarl/blob/master/markdown/markdown%EC%9D%B4%EB%9E%80.md)
+ - [markdown-설명](https://github.com/Bheinarl/TIL_Bheinarl/blob/master/markdown/markdown-%EC%84%A4%EB%AA%85.md)
  - [markdown-활용](https://github.com/Bheinarl/TIL_Bheinarl/blob/master/markdown/markdown-%ED%99%9C%EC%9A%A9.md)
 
