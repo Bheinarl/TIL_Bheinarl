@@ -1,11 +1,11 @@
-# Git
+# git
 
 [git이란](#git이란)   
 [버전 관리](#버전-관리)   
 [분산 구조에서의 장점](#분산-구조에서의-장점)   
 [git의 역할](#git의-역할)   
 [git의 영역](#git의-영역)   
-[commit](#commit)   
+[Commit](#Commit)   
 [로컬(local)](#로컬local)   
 
 ---
