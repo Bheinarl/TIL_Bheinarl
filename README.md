@@ -17,7 +17,7 @@
 ### CLI
   - [cli-설명](https://github.com/Bheinarl/TIL_Bheinarl/blob/master/cli/cli-%EC%84%A4%EB%AA%85.md)
 
-  - [cli-문법-및-활용](https://github.com/Bheinarl/TIL_Bheinarl/blob/master/cli/cli-%EB%AC%B8%EB%B2%95%EB%B0%8F%ED%99%9C%EC%9A%A9.md)
+  - [cli-문법-및-활용](https://github.com/Bheinarl/TIL_Bheinarl/blob/master/cli/cli-%EB%AC%B8%EB%B2%95-%EB%B0%8F-%ED%99%9C%EC%9A%A9.md)
 
 ### Git
   - [git-설명](https://github.com/Bheinarl/TIL_Bheinarl/blob/master/git/git-%EC%84%A4%EB%AA%85.md)
@@ -42,64 +42,64 @@
  - [markdown-활용](https://github.com/Bheinarl/TIL_Bheinarl/blob/master/markdown/markdown-%ED%99%9C%EC%9A%A9.md)
 
 ### Python
-- [style-guide]()
+- [style-guide](https://github.com/Bheinarl/TIL_Bheinarl/blob/master/python/style-guide.md)
 
-- [comment]()
+- [comment](https://github.com/Bheinarl/TIL_Bheinarl/blob/master/python/comment.md)
 
-- [expression_value]()
+- [expression_value](https://github.com/Bheinarl/TIL_Bheinarl/blob/master/python/expression_value.md)
 
-- data-types
-  - [data-types]()
+- [data-types](https://github.com/Bheinarl/TIL_Bheinarl/tree/master/python/data-types)
+  - [data-types](https://github.com/Bheinarl/TIL_Bheinarl/blob/master/python/data-types/data-types.md)
   
-  - [numeric-types]()
+  - [numeric-types](https://github.com/Bheinarl/TIL_Bheinarl/blob/master/python/data-types/numeric-types.md)
   
   - sequence-types
-    - [sequence-types]()
+    - [sequence-types](https://github.com/Bheinarl/TIL_Bheinarl/blob/master/python/data-types/sequence-types/sequence-types.md)
     
-    - [str]()
+    - [str](https://github.com/Bheinarl/TIL_Bheinarl/blob/master/python/data-types/sequence-types/str.md)
     
-    - [list]()
+    - [list](https://github.com/Bheinarl/TIL_Bheinarl/blob/master/python/data-types/sequence-types/list.md)
     
-    - [tuple]()
+    - [tuple](https://github.com/Bheinarl/TIL_Bheinarl/blob/master/python/data-types/sequence-types/tuple.md)
     
-    - [range]()
+    - [range](https://github.com/Bheinarl/TIL_Bheinarl/blob/master/python/data-types/sequence-types/range.md)
   
-  - nonsequence-types
-    - [dict]()
+  - [nonsequence-types](https://github.com/Bheinarl/TIL_Bheinarl/tree/master/python/data-types/nonsequence-types)
+    - [dict](https://github.com/Bheinarl/TIL_Bheinarl/blob/master/python/data-types/nonsequence-types/dict.md)
     
-    - [set]()
+    - [set](https://github.com/Bheinarl/TIL_Bheinarl/blob/master/python/data-types/nonsequence-types/set.md)
   
-  - other-types
-    - [none]()
+  - [other-types](https://github.com/Bheinarl/TIL_Bheinarl/tree/master/python/data-types/other-types)
+    - [none](https://github.com/Bheinarl/TIL_Bheinarl/blob/master/python/data-types/other-types/none.md)
     
-    - [boolean]()
+    - [boolean](https://github.com/Bheinarl/TIL_Bheinarl/blob/master/python/data-types/other-types/boolean.md)
     
-    - [collection]()
+    - [collection](https://github.com/Bheinarl/TIL_Bheinarl/blob/master/python/data-types/other-types/collection.md)
 
-- [type-conversion]()
+- [type-conversion](https://github.com/Bheinarl/TIL_Bheinarl/blob/master/python/type-conversion.md)
 
-- [operator]()
+- [operator](https://github.com/Bheinarl/TIL_Bheinarl/blob/master/python/operator.md)
 
-- functions
-  - [functions-설명]()
+- [functions](https://github.com/Bheinarl/TIL_Bheinarl/tree/master/python/functions)
+  - [functions-설명](https://github.com/Bheinarl/TIL_Bheinarl/blob/master/python/functions/functions-%EC%84%A4%EB%AA%85.md)
   
-  - [매개변수와-인자]()
+  - [매개변수와-인자](https://github.com/Bheinarl/TIL_Bheinarl/blob/master/python/functions/%EB%A7%A4%EA%B0%9C%EB%B3%80%EC%88%98%EC%99%80-%EC%9D%B8%EC%9E%90.md)
   
-  - [재귀-함수]()
+  - [재귀-함수](https://github.com/Bheinarl/TIL_Bheinarl/blob/master/python/functions/%EC%9E%AC%EA%B7%80-%ED%95%A8%EC%88%98.md)
   
-  - [내장-함수]()
+  - [내장-함수](https://github.com/Bheinarl/TIL_Bheinarl/blob/master/python/functions/%EB%82%B4%EC%9E%A5-%ED%95%A8%EC%88%98.md)
   
-  - [함수와-scope]()
+  - [함수와-scope](https://github.com/Bheinarl/TIL_Bheinarl/blob/master/python/functions/%ED%95%A8%EC%88%98%EC%99%80-scope.md)
   
-  - [lambda-함수]()
+  - [lambda-함수](https://github.com/Bheinarl/TIL_Bheinarl/blob/master/python/functions/lambda-%ED%95%A8%EC%88%98.md)
 
-- [packing_unpacking]()
+- [packing_unpacking](https://github.com/Bheinarl/TIL_Bheinarl/blob/master/python/packing_Unpacking.md)
 
-- [module]()
+- [module](https://github.com/Bheinarl/TIL_Bheinarl/blob/master/python/module.md)
 
-- control-of-flow
-  - [control-of-flow]()
+- [control-of-flow](https://github.com/Bheinarl/TIL_Bheinarl/tree/master/python/control-of-flow)
+  - [control-of-flow](https://github.com/Bheinarl/TIL_Bheinarl/blob/master/python/control-of-flow/control-of-flow.md)
   
-  - [conditional-statement]()
+  - [conditional-statement](https://github.com/Bheinarl/TIL_Bheinarl/blob/master/python/control-of-flow/conditional-statement.md)
   
-  - [loop-statement]()
+  - [loop-statement](https://github.com/Bheinarl/TIL_Bheinarl/blob/master/python/control-of-flow/loop-statement.md)
