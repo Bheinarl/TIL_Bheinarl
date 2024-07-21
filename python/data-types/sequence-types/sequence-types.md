@@ -7,6 +7,7 @@
 
 ## Sequence Types
 - **여러** 개의 값들을 **순서**대로 나열하여 저장하는 자료형
+
 - str, list, tuple, range
 
 ## Sequence Types의 특징
