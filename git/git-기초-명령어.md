@@ -12,7 +12,9 @@
 <br />
 
 <div align='center'>
-<img src="https://file.notion.so/f/f/fea5dfb6-d382-44f8-881d-de09359f06f1/edf78396-008c-4439-acea-bad4355f86da/Untitled.png?id=fe43c413-01fe-43b4-b4cf-0d10df684c5a&table=block&spaceId=fea5dfb6-d382-44f8-881d-de09359f06f1&expirationTimestamp=1721116800000&signature=oDqj7zjgqDoWMiiSNhnxwPH2NzfdiyZXofXrVuYzuJM&downloadName=Untitled.png">
+
+![git_status](./images/git_status_2.png)
+
 </div>   
 <br />   
 

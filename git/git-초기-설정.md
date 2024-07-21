@@ -15,7 +15,9 @@
 - 아래와 같이 'master'가 표시된다면 Git의 영역에 들어간 것이다.
 
 <div align='center'>
-<img src="https://file.notion.so/f/f/fea5dfb6-d382-44f8-881d-de09359f06f1/9d304354-c920-488c-896f-438336615c54/Untitled.png?id=4ac12673-c813-4c68-8026-9f770c01af44&table=block&spaceId=fea5dfb6-d382-44f8-881d-de09359f06f1&expirationTimestamp=1721116800000&signature=LoJVnqKPRg-_iYE7brqjlZHc64mHC-ivJPE9KdnaKzw&downloadName=Untitled.png">
+
+![git_init_1](./images/git_init_1.png)
+
 </div>
 
 - `git init`한 디렉토리의 하위 디렉토리는 모두 git의 영역에 포함된다.
@@ -25,7 +27,9 @@
 - 실수하였을 경우, 아래와 같은 숨겨진 폴더를 삭제하면 복구가 된다.
 
 <div align='center'>
-<img src="https://file.notion.so/f/f/fea5dfb6-d382-44f8-881d-de09359f06f1/9d776105-1061-4065-b4bf-b9295acabbac/Untitled.png?id=2252a49b-e6bd-47a3-8564-59bfdeb6129e&table=block&spaceId=fea5dfb6-d382-44f8-881d-de09359f06f1&expirationTimestamp=1721116800000&signature=gyZuJXyDQHOn98NWuqnv14WcwT-kOW0RxB_tZJsdbyU&downloadName=Untitled.png">
+
+![git_init_2](./images/git_init_2.png)
+
 </div>
 
 ## `git add`
