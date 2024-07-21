@@ -5,7 +5,7 @@
 [Module 사용하기](#module-사용하기)    
 
 [`as` 키워드](#as-키워드)   
-[Python Standard Library](#python-standard-library-파이썬-표준-라이브러리)
+[Python Standard Library](#python-standard-library-파이썬-표준-라이브러리)   
 [Package](#패키지)   
 
 ## Module
