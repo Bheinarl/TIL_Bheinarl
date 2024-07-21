@@ -12,7 +12,7 @@
 [CLI](#cli)   
 [Git](#git)   
 [Markdown](#markdown)   
-[Python]
+[Python](#python)
 ---
 ### CLI
   - [cli-설명](https://github.com/Bheinarl/TIL_Bheinarl/blob/master/cli/cli-%EC%84%A4%EB%AA%85.md)
