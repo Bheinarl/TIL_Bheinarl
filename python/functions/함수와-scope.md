@@ -3,6 +3,7 @@
 [Python의 범위 Scope](#python의-범위scope)   
 [범위와 변수 관계](#범위와-변수-관계)   
 [Scope 예시](#scope-예시)   
+
 [변수 수명 주기](#변수-수명-주기-lifecycle)   
 [이름 검색 규칙](#이름-검색-규칙-name-resolution)   
 [`global` 키워드](#global-키워드)   
