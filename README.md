@@ -53,7 +53,7 @@
   
   - [numeric-types](https://github.com/Bheinarl/TIL_Bheinarl/blob/master/python/data-types/numeric-types.md)
   
-  - sequence-types
+  - [sequence-types](https://github.com/Bheinarl/TIL_Bheinarl/tree/master/python/data-types/sequence-types)
     - [sequence-types](https://github.com/Bheinarl/TIL_Bheinarl/blob/master/python/data-types/sequence-types/sequence-types.md)
     
     - [str](https://github.com/Bheinarl/TIL_Bheinarl/blob/master/python/data-types/sequence-types/str.md)

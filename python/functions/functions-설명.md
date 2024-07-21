@@ -50,8 +50,7 @@ print(sum_result)
 
 ## 함수의 구조
 
-<img src = 'https://file.notion.so/f/f/fea5dfb6-d382-44f8-881d-de09359f06f1/4c21dc18-b25c-4602-8c58-51d2f236611f/Untitled.png?id=ae844419-72b3-4483-898c-9b56a8d6bbe6&table=block&spaceId=fea5dfb6-d382-44f8-881d-de09359f06f1&expirationTimestamp=1721484000000&signature=Pxn3xWdq8-f_aOr3Av5GowaEpXMJ9C8MEqpTro6ih-U&downloadName=Untitled.png'>
-
+![images](./images/functions-설명_1.png)
 
 ## 함수의 정의와 호출
 
