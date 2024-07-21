@@ -11,22 +11,95 @@
 
 [CLI](#cli)   
 [Git](#git)   
-[Markdown](#markdown)
+[Markdown](#markdown)   
+[Python]
 ---
 ### CLI
   - [cli-설명](https://github.com/Bheinarl/TIL_Bheinarl/blob/master/cli/cli-%EC%84%A4%EB%AA%85.md)
-  - [cli-문법및활용](https://github.com/Bheinarl/TIL_Bheinarl/blob/master/cli/cli-%EB%AC%B8%EB%B2%95%EB%B0%8F%ED%99%9C%EC%9A%A9.md)
+
+  - [cli-문법-및-활용](https://github.com/Bheinarl/TIL_Bheinarl/blob/master/cli/cli-%EB%AC%B8%EB%B2%95%EB%B0%8F%ED%99%9C%EC%9A%A9.md)
+
 ### Git
   - [git-설명](https://github.com/Bheinarl/TIL_Bheinarl/blob/master/git/git-%EC%84%A4%EB%AA%85.md)
+ 
   - [git-초기-설정](https://github.com/Bheinarl/TIL_Bheinarl/blob/master/git/git-%EC%B4%88%EA%B8%B0-%EC%84%A4%EC%A0%95.md)  
-  - [git-기초-명령어](https://github.com/Bheinarl/TIL_Bheinarl/blob/master/git/git-%EA%B8%B0%EC%B4%88-%EB%AA%85%EB%A0%B9%EC%96%B4.md)
+
+ - [git-기초-명령어](https://github.com/Bheinarl/TIL_Bheinarl/blob/master/git/git-%EA%B8%B0%EC%B4%88-%EB%AA%85%EB%A0%B9%EC%96%B4.md)
+ 
   - [gitignore](https://github.com/Bheinarl/TIL_Bheinarl/blob/master/git/gitignore.md)
+ 
   - [git-push_pull_clone](https://github.com/Bheinarl/TIL_Bheinarl/blob/master/git/git-push_pull_clone.md)
+ 
   - [git-revert](https://github.com/Bheinarl/TIL_Bheinarl/blob/master/git/git-revert.md)
+ 
   - [git-reset](https://github.com/Bheinarl/TIL_Bheinarl/blob/master/git/git-reset.md)
+ 
   - [git-파일-수정-명령어](https://github.com/Bheinarl/TIL_Bheinarl/blob/master/git/git-%ED%8C%8C%EC%9D%BC-%EC%88%98%EC%A0%95-%EB%AA%85%EB%A0%B9%EC%96%B4.md)
   
 ### Markdown
  - [markdown-설명](https://github.com/Bheinarl/TIL_Bheinarl/blob/master/markdown/markdown-%EC%84%A4%EB%AA%85.md)
+
  - [markdown-활용](https://github.com/Bheinarl/TIL_Bheinarl/blob/master/markdown/markdown-%ED%99%9C%EC%9A%A9.md)
 
+### Python
+- [style-guide]()
+
+- [comment]()
+
+- [expression_value]()
+
+- data-types
+  - [data-types]()
+  
+  - [numeric-types]()
+  
+  - sequence-types
+    - [sequence-types]()
+    
+    - [str]()
+    
+    - [list]()
+    
+    - [tuple]()
+    
+    - [range]()
+  
+  - nonsequence-types
+    - [dict]()
+    
+    - [set]()
+  
+  - other-types
+    - [none]()
+    
+    - [boolean]()
+    
+    - [collection]()
+
+- [type-conversion]()
+
+- [operator]()
+
+- functions
+  - [functions-설명]()
+  
+  - [매개변수와-인자]()
+  
+  - [재귀-함수]()
+  
+  - [내장-함수]()
+  
+  - [함수와-scope]()
+  
+  - [lambda-함수]()
+
+- [packing_unpacking]()
+
+- [module]()
+
+- control-of-flow
+  - [control-of-flow]()
+  
+  - [conditional-statement]()
+  
+  - [loop-statement]()
