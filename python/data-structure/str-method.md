@@ -23,7 +23,7 @@
 | `str.index(x)` | x의 첫 번째 위치를 반환. <br />없으면 오류 발생 |
 | `str.isupper()` | 대문자 여부 |
 | `str.islower()` | 소문자 여부 |
-| `str.isalpha()` | 알파벳 문자 여부 <br /> 단순 알파벳이 아닌 유니코드 상 Letter <br />(한국어도 포함)
+| `str.isalpha()` | 알파벳 문자 여부 <br /> 단순 알파벳이 아닌 유니코드 상 Letter <br />(한국어도 포함)|
 
 ## `.find(x)`
 - x의 첫 번째 위치를 반환
