@@ -103,3 +103,16 @@
   - [conditional-statement](https://github.com/Bheinarl/TIL_Bheinarl/blob/master/python/control-of-flow/conditional-statement.md)
   
   - [loop-statement](https://github.com/Bheinarl/TIL_Bheinarl/blob/master/python/control-of-flow/loop-statement.md)
+
+- [data-structure](https://github.com/Bheinarl/TIL_Bheinarl/tree/master/python/data-structure)   
+  - [data-structure](https://github.com/Bheinarl/TIL_Bheinarl/blob/master/python/data-structure/data-structure.md)
+  
+  - [method](https://github.com/Bheinarl/TIL_Bheinarl/blob/master/python/data-structure/method.md)
+  
+  - [str-method](https://github.com/Bheinarl/TIL_Bheinarl/blob/master/python/data-structure/str-method.md)
+  
+  - [list-method](https://github.com/Bheinarl/TIL_Bheinarl/blob/master/python/data-structure/list-method.md)
+  
+  - [numeric-method](https://github.com/Bheinarl/TIL_Bheinarl/blob/master/python/data-structure/numeric-method.md)
+
+- [copy](https://github.com/Bheinarl/TIL_Bheinarl/blob/master/python/copy.md)
