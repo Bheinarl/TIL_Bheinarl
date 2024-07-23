@@ -25,8 +25,11 @@ b[0] = 100
 print(a)  # [100, 2, 3, 4]
 print(b)  # [100, 2, 3, 4]
 ```
+<div align='center'>
 
 ![변경 가능한 데이터 타입의 복사 이미지](./images/변경가능한데이터타입의복사_1.png)
+
+</div>
 
 ## 변경 불가능한 데이터 타입의 복사
 
@@ -39,8 +42,11 @@ print(a)  # 20
 print(b)  # 10
 ## b가 20으로 재할당 받은 것
 ```
+<div align='center'>
 
 ![변경 불가능한 데이터 타입의 복사 이미지](./images/변경불가능한데이터타입의복사_1.png)
+
+</div>
 
 ## 복사 유형
 1. 할당 (Assignment)
@@ -62,7 +68,11 @@ copy_list[0] = 'hi'
 print(original_list, copy_list)  # ['hi', 2, 3] ['hi', 2, 3]
 ```
 
+<div align='center'>
+
 ![할당_1](./images/할당_1.png)
+
+</div>
 
 ## 얕은 복사 Shallow Copy
 - 리스트 얕은 복사 예시
@@ -76,8 +86,11 @@ print(a, b)  # [1, 2, 3] [1, 2, 3]
 b[0] = 100
 print(a, b)  # [1, 2, 3] [100, 2, 3]
 ```
+<div align='center'>
 
 ![얕은복사_1](./images/얕은복사_1.png)
+
+</div>
 <br />
 <br />
 
@@ -123,8 +136,11 @@ print(a, b)  # [1, 2, [1, 2]] [1, 2, [1, 2]]
 b[2][0] = 100
 print(a, b)  # [1, 2, [100, 2]] [1, 2, [100, 2]]
 ```
+<div align='center'>
 
 ![얕은복사_2](./images/얕은복사_2.png)
+
+</div>
 
 ## 깊은 복사 Deep Copy
 - 리스트 깊은 복사 예시
@@ -142,5 +158,8 @@ deep_copied_list[2][0] = 100
 print(original_list)  # [1, 2, [1, 2]]
 print(deep_copied_list)  # [1, 2, [100, 2]]
 ```
+<div align='center'>
 
 ![깊은복사_1](./images/깊은복사_1.png)
+
+</div>

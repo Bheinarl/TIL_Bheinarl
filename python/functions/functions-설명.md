@@ -50,7 +50,11 @@ print(sum_result)
 
 ## 함수의 구조
 
+<div align='center'>
+
 ![images](./images/functions-설명_1.png)
+
+</div>
 
 ## 함수의 정의와 호출
 
