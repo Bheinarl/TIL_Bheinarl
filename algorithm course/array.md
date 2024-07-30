@@ -52,5 +52,21 @@ Arr1[idx] - 20 # 배열 Arr2의 idx번 원소에 20을 저장
   - 각 줄마다 “#T” (T는 테스트 케이스 번호)를 출력한 뒤, 답을 출력한다.
 
 ```python 
+T = int(input()) # 테스트 케이스 수
 
+for tc in range(1,T+1):
+    N = int(input())
+    arr = list(map(int, input().split()))
+    max_v = arr[0]
+    min_v = arr[0]
+    for i in range(1, N):
+        if max_v < arr[i]:
+            max_v = arr[i]
+
+        if min_v > arr[i]:
+            min_v = arr[i]
+
+    result = max_v - min_v
+
+    print(f'#{tc} {result}')
 ```
