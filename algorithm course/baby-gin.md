@@ -2,7 +2,7 @@
 
 [Baby-gin Game](#baby-gin-game)   
 [완전 검색](#완전-검색-exaustive-search)   
-[완전 검색을 활용한 Baby-gin](#baby-gin-game완전-검색완전-검색을-활용한-baby-gin)   
+[완전 검색을 활용한 Baby-gin](#완전-검색을-활용한-baby-gin)
 
 ---
 ## Baby-gin Game

@@ -1,6 +1,9 @@
 # Greedy Algorithm
 
-[]()
+[greedy algorithm](#greedy-algorithm-탐욕-알고리즘)   
+[탐욕 알고리즘의 동작 과정](#탐욕-알고리즘의-동작-과정)   
+[탐욕 알고리즘 baby-gin 구현](#탐욕-알고리즘-baby-gin-구현)   
+
 ---
 ## Greedy Algorithm 탐욕 알고리즘
 - 탐욕 알고리즘은 최적해를 구하는 데 사용되는 근시안적인 방법
