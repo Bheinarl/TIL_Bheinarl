@@ -8,9 +8,13 @@
 [Memoization](#memoization)   
 [DP(Dynamic Programming)](#dp-dynamic-programming)   
 [DFS(깊이 우선 탐색)](#dfs-깊이-우선-탐색)   
-
 [Stack을 이용한 계산기](#stack을-이용한-계산기)   
+
 [Backtracking](#backtracking-백트래킹)   
+[부분집합](#부분집합)   
+[순열](#순열)   
+[가지치기](#가지치기)   
+
 
 ---
 ## Stack
@@ -726,3 +730,142 @@ end DFS()
 2. 각 노드가 유망한지 유망한지를 점검한다.
 
 3. 만일 그 노드가 유망하지 않으면, 그 노드의 부모 노드로 올라가서 검색을 계속 한다.
+
+## 부분집합
+### 부분집합
+- 어떤 집합의 공집합과 자기 자신을 포함한 모든 부분집합을 powerset이라고 하며 구하고자하는 어떤 집합의 원소 개수가 n일 경우 부분집합의 개수는 2**n개이다.
+- 백트래킹 기법으로 powerset을 만들어보자.
+  - 앞에서 설명한 일반적인 백트래킹 접근 방법을 이용
+  - n개의 원소가 들어있는 집합의 2**n개의 부분집합을 만들 때는, True 또는 False 값을 가지는 항목들로 구성된 n개의 배열을 만드는 방법을 이용
+  - 여기서 배열의 i번째 항목은 i번째의 원소가 부분집합의 값인지 아닌지를 나타내는 값
+  ![부분집합_1](./images/부분집합_1.png)
+- 각 원소가 부분집합에 포함되었는지를 loop 이용하여 확인하고 부분집합을 생성하는 방법
+  ```python
+  bit = [0, 0, 0, 0]
+  for i in range(2):
+    bit[0] = i                 # 0번째 원소
+    for j in range(2):
+      bit[1] = j               # 1번째 원소
+      for k in range(2):
+        bit[2] = k             # 2번째 원소
+        for l in range(2):
+          bit[3] = l           # 3번째 원소
+          print(bit)           # 생성된 부분집합 출력
+  ```
+  - 위 방법은 현재 bit가 4자리라서 가능하지만 실질적으로는 자리수가 커지기 때문에 사용 불가능
+- powerset을 구하는 백트래킹 알고리즘
+  ```python
+  def backtrack(a, k, n)  # a 주어진 배열, k 결정할 원소(시작자리), n 원소 개수
+    c = [0] * MAXCANDIDATES  # 후보 갯수 최댓값
+    
+    if k == n:  # 모든 자리의 결정을 끝냈을 때
+      process_solution(a, k)  # 답이면 원하는 작업을 한다.
+    else:
+      ncandidates = construct_candidates(a, k, n, c)  # c 후보 추천 및 저장
+      # 추천된 후보 수 ncandidates 가 return 값으로 들어온다.
+      for i in range(ncandidates):  # 0, 1으로 이루어져 있으므로 후보 수는 2
+        a[k] = c[i]
+        backtrack(a, k+1, n)  # 다음 자리의 후보를 결정하러 이동
+
+  def construct_candidates(a, k, n, c):
+    c[0] = True
+    c[1] = False
+    return 2
+    
+  def process_solution(a, k):
+    for i in range(k):
+      if a[i]:
+        print(num[i], end = '')
+    print()
+
+
+  MAXCANDIDATES = 2  # 최대 후보 수, 0과 1로 이루어져 있으므로 2개
+  NMAX = 4  # 원소의 개수
+  a = [0] * NMAX
+  num = [1, 2, 3, 4]
+  backtrack(a, 0, NMAX)
+  # 공집합은 출력이 없기 때문에 공백(빈 줄)으로 표시
+  ```
+
+## 순열
+### 단순하게 순열을 생성하는 방법
+- 예시 - 집합 {1, 2, 3}에서 모든 순열을 생성하는 함수
+  - 동일한 숫자가 포함되지 않았을 때, 각 자리 수 별로 loop를 이용해 아래와 같이 구현할 수 있다.
+  ```python
+  for i1 in range(1, 4):
+    for i2 in range(1, 4):
+      if i2 != i1:
+        for i3 in range(1, 4):
+          if i3 != i1 and i3 != i2:
+            print(i1, i2, i3)
+  ```
+### 백트래킹을 이용하여 {1, 2, 3, … , NMAX}에 대한 순열 구하기
+- 접근 방법은 부분집합 구하는 방법과 유사하다.   
+  ![순열_1](./images/순열_1.png)   
+
+  ```python
+  def backtrack(a, k, n):
+    c = [0] * MAXCANDIDATES
+    
+    if k == n:
+      for i in range(0, k):
+        print(a[i], end=" ")
+      print()
+    else:
+      ncandidates = construct_candidates(a, k, n, c)
+      for i in range(ncandidates):
+        a[k] = c[i]
+        backtrack(a, k+1, n)
+
+  def construct_candidates(a, k, n, c):
+    in_perm = [False] * (NMAX + 1)  # 일종의 0과 1로 이루어진 카운터 배열처럼
+    
+    for i range(k):
+      in_perm[a[i]] = True
+      
+    ncandidates = 0
+    for i in range(1, NMAX + 1):
+      if in_perm[i] == False:  # 원소가 사용된 적이 없다면 후보로 넣어준다.
+        c[ncandidates] = i  # 추천된 후보 개수가 i개
+        ncandidates += 1
+    return ncandidates
+  ```
+### 간단한 순열 알고리즘
+```python
+  f(i, N)
+    if i  == N:  # 순열 완성
+    
+    else:
+      for j in range(i) -> N-1
+        P[i] <-> P[j]
+        f(i+1, N)
+        P[i] <-> P[j]
+```
+## 가지치기
+### 부분집합의 합
+- 집합 {1, 2, 3} 부분집합의 합
+  - i 원소의 포함 여부를 결정하면 i까지의 부분 집합의 합 s_i를 결정할 수 있음
+  - s_(i-1)이 찾고자 하는 부분집합의 합보다 크면 남은 원소를 고려할 필요가 없음
+  - A[i] 원소를 부분집합의 원소로 고려하는 재귀 함수(A는 서로 다른 자연수의 집합)
+  ```python
+  # i - 1 원소까지 고려한 합(s), 찾으려는 합(t)
+  f(i, N, s, t)
+    if s == t:    # i-1 원소까지의 합이 찾는 값인 경우
+      ...
+    elif i == N:  # 모든 원소에 대한 고려가 끝난 경우
+      ...
+    elif s > t:   # 남은 원소를 고려할 필요가 없는 경우
+      ...
+    else:         # 남은 원소가 있고 s < t인 경우
+      ...
+  # 단순 부분집합의 합만 구하려면 여기까지
+
+      subset[k] = 1
+      f(i+1, N, s+A[i], t)  # i 원소 포함
+      subset[i] = 0
+      f(i+1, N, s, t)  # i 원소 미포함
+  ```
+  - 추가 고려사항
+    - 고려한 구간의 합이 S, 남은 구간의 합이 RS
+    - S > T이면 중단, S + RS < T
+    - 남은 원소의 합을 다  더해도 찾는 값 T 미만인 경우 중단
