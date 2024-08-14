@@ -7,7 +7,7 @@
 [Deque](#deque)   
 [우선순위 큐](#우선순위-큐)   
 [버퍼](#버퍼)   
-
+[BFS](#bfs)
 ---
 
 ## Queue
@@ -394,3 +394,170 @@
     - 버퍼는 일반적으로 입출력 및 네트워크와 관련된 기능에서 이용
     
     - 순서대로 입력 / 출력 / 전달되어야 하므로 FIFO 방식의 자료구조인 큐가 활용
+
+## BFS
+### BFS Breadth First Search 너비 우선 탐색
+- 그래프를 탐색하는 방법에는 크게 두 가지가 있음
+  - 깊이 우선 탐색 Depth First Search DFS
+  
+  - 너비 우선 탐색 Breadth First Search BFS
+
+- 너비 우선 탐색은 탐색 시작점의 인접한 정점들을 먼저 모두 차례로 방문한 후에, 방문했던 정점을 시작점으로 하여 다시 인접한 정점들을 차례로 방문하는 방식
+
+- 인접한 정점들에 대해 탐색을 한 후, 차례로 다시 너비우선탐색을 진행해야 하므로, 선입선출 형태의 자료구조인 큐를 활용함
+
+- BFS는 아래 순서로 탐색함   
+  ![bfs_1](./images/bfs_1.png)
+
+- 입력 파라미터 : 그래프 G와 탐색 시작점 v
+    - 방문할 노드 : dequeue한 노드
+    
+    ```python
+    def BFS(G, v):             # 그래프 G, 탐색 시작점 v
+    	visited = [0] * (n+1)    # n : 정점의 개수, 방문 기록
+    	queue = []               # 큐 생성
+    	queue.append(v)          # 시작점 v를 큐에 삽입
+    	                         # 위에는 준비 과정
+    	                         # 아래는 탐색 과정
+    	while queue:             # 큐가 비어있지 않은 경우
+    		t = queue.pop(0)       # 큐의 첫 번째 원소 반환
+    		if not visited[t]:     # 방문되지 않은 곳이라면
+    			visited[t] = True    # 방문한 것으로 표시
+    			visited(t)           # 정점 t에서 할 일
+    			for i in G[t]:       # t와 연결된 모든 정점에 대해
+    				if not visited[i]: # 방문되지 않은 곳이라면
+    					queue.append(i)  # 큐에 넣기
+    ```
+
+### BFS 기본 과정 
+
+![bfs기본과정_1](./images/bfs기본과정_1.png)
+
+- 초기 상태
+    - Visited 배열 초기화
+    
+    - Q 생성
+    
+    - 시작점 enqueue
+    
+    ![bfs기본과정_2](./images/bfs기본과정_2.png)
+
+- A점 부터 시작
+    - dequeue : A
+    
+    - A 방문한 것으로 표시
+    
+    - A의 인접점 enqueue
+    
+    ![bfs기본과정_3](./images/bfs기본과정_3.png)
+
+- 탐색 진행
+    - dequeue: B
+    
+    - B 방문한 것으로 표시
+    
+    - B의 인접점 enqueue
+    
+    - 원래는 A도 B인접이라서 Q에 A도 추가해야하지만 visited에 표시해놓았기 때문에 생략
+    
+    - A도 넣어놓고 나중에 뺄 수 있지만, 단점은 Q 사이즈 예측이 어렵다. Q의 원소의 개수를 정확히 모른다.
+    
+    ![bfs기본과정_4](./images/bfs기본과정_4.png)
+
+- 탐색 진행
+    - dequeue: C
+    
+    - C 방문한 것으로 표시
+    
+    - C의 인접점 enqueue
+    
+    ![bfs기본과정_5](./images/bfs기본과정_5.png)
+
+- 탐색 진행
+    - dequeue: D
+    
+    - D 방문한 것으로 표시
+    
+    - D의 인접점 enqueue
+    
+    ![bfs기본과정_6](./images/bfs기본과정_6.png)
+
+- 탐색 진행
+    - dequeue: E
+    
+    - E 방문한 것으로 표시
+    
+    - E의 인접점 enqueue
+    
+    ![bfs기본과정_7](./images/bfs기본과정_7.png)
+
+- 탐색 진행
+    - dequeue: F
+    
+    - F 방문한 것으로 표시
+    
+    - F의 인접점 enqueue
+    
+    ![bfs기본과정_8](./images/bfs기본과정_8.png)
+
+- 탐색 진행
+    - dequeue: G
+    
+    - G 방문한 것으로 표시
+    
+    - G의 인접점 enqueue
+    
+    ![bfs기본과정_9](./images/bfs기본과정_9.png)
+
+- 탐색 진행
+    - dequeue: H
+    
+    - H 방문한 것으로 표시
+    
+    - H의 인접점 enqueue
+        
+    ![bfs기본과정_10](./images/bfs기본과정_10.png)
+
+- 탐색 진행
+    - dequeue: I
+    
+    - I 방문한 것으로 표시
+    
+    - I의 인접점 enqueue
+    
+    ![bfs기본과정_11](./images/bfs기본과정_11.png)
+
+### BFS 예제
+
+![bfs 예제](./images/bfs예제.png)
+
+- 입력 파라미터 : 그래프 G와 탐색 시작점 v
+    
+    ```python
+    def BFS(G, v, n):          # 그래프 G, 탐색 시작점 v
+    	visited = [0] * (n+1)    # n : 정점의 개수, 방문 기록
+    	queue = []               # 큐 생성
+    	queue.append(v)          # 시작점 v를 큐에 삽입
+    	visited[v] = 1
+    	                         # 위에는 준비 과정
+    	                         # 아래는 탐색 과정
+    	while queue:             # 큐가 비어있지 않은 경우
+    		t = queue.pop(0)       # 큐의 첫 번째 원소 반환
+    		visited(t)             # 방문한 것으로 표시
+    
+    		for i in G[t]:         # t와 연결된 모든 정점에 대해
+    			if not visited[i]:   # 방문되지 않은 곳이라면
+    				queue.append(i)    # 큐에 넣기
+    				visited[i] = visited[t] + 1   # n으로부터 1만큼 이동
+    ```
+    
+    - enqueue할 때 visit을 표시하면 중복될 수 있다.
+    
+    - 따라서 넣을 때도 visit, 뺄 때도 visit을 표시하거나 아예 넣을때만 visit에 표시해야한다.
+
+### BFS 연습 문제
+
+![bfs연습문제](./images/bfs연습문제.png)
+
+- 다음 그래프에서 너비 우선 탐색 정점 경로
+  - 1 - 2 - 3 - 4 - 5 - 7 - 6
