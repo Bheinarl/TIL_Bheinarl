@@ -62,6 +62,7 @@
 ```html
 {% tag %}
 {% if %} {% endif %}
+{% for item in items %} {% endfor %}
 ```
 
 ### DTL Comments
@@ -118,11 +119,17 @@
 
 - 2개 이상은 불가능하다.
 
+- `{% extends 'path' %}`
+
 ### `‘block’` tag
 
 - 하위 템플릿에서 재정의할 수 있는 블록을 정의
 
 - 상위 템플릿에 작성하며 하위 템플릿이 작성할 수 있는 공간을 지정
+
+- `{% block name %}`
+
+- `{% endblock name %}`
 
 ## HTML form
 
@@ -138,6 +145,8 @@
 - 사용자로부터 할당된 데이터를 서버로 전송
 
 - 웹에서 사용자 정보를 입력하는 여러 방식(text, password, checkbox 등)을 제공
+
+- `<form action='#' method='GET'> </form>`
 
 ### ‘action’ & ‘method’
 
@@ -289,6 +298,14 @@ request.GET.get('message')
 
 - include 괄호 안에는 문자열 형태
 
+```python
+from django.urls import path, include
+
+urlpatterns = [
+	path('articles/', include('articles.urls'))
+]
+```
+
 ## URL 이름 지정
 
 ### URL 구조 변경에 따른 문제점
@@ -336,6 +353,15 @@ path('index/', views.index, name='index')
 ### ‘app_name’ 속성 지정
 
 - app_name 변수 값 설정
+
+- `path('index/', views.index, name='index')`
+
+```python
+app_name = 'articles'
+urlpatterns = [
+	...,
+]
+```
 
 ### URL tag의 최종 변화
 
