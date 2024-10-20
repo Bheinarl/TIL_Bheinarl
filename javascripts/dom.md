@@ -507,7 +507,7 @@ console.log(x) // 1
 - DOM 트리의 각 부분은 Node라는 객체로 표현됨
     - Document Node → HTML 문서 전체를 나타내는 노드
     
-    - Element Node → HTML 요소를 나타내는 노드 (예를 들어 <p>)
+    - Element Node → HTML 요소를 나타내는 노드 (예를 들어 `<p>`)
     
     - Text Node → HTML 텍스트 (Element Node 내의 텍스트 컨텐츠를 나타냄)
     
