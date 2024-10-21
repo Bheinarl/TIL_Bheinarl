@@ -105,6 +105,9 @@
 
 - 스크립트 언어가 준수해야 하는 규칙, 세부사항 등을 제공
 
+> script 라고 하면 이러한 규칙을 지키고 이러한 사항을 준수해라 라는 명세서
+>
+
 ### ECMAScript와 JavaScript
 
 - JavaScript는 ECMAScript 표준을 구현한 구체적인 프로그래밍 언어
@@ -168,6 +171,10 @@
 2. `const`
 
 3. `var`
+
+> 참고에서 var에 대한 내용 참고
+> 
+> 보통 `let` , `const` 2개를 사용
 
 ### `let`
 
@@ -233,6 +240,10 @@ if (x === 1) {
 console.log(x) // 1
 ```
 
+> 블록 영역 
+`console.log(x)` : `print(x)`와 비슷하다고 생각하면 된다.
+>
+
 ### 어떤 변수 선언 키워드를 사용해야 할까?
 
 - `const`를 기본으로 사용
@@ -295,7 +306,18 @@ console.log(x) // 1
 3. 브라우저 Console
     
     > consone.log(’hello’)
+
+### Document Structure
+
+- HTML 문서는 상자들이 중첩된 형태로 볼 수 있음
     
+    ![document_structure_1](./images/document_structure_1.png)
+    
+- 브라우저가 문서를 표현하기 위해 사용하는 데이터 구조는 우측 이미지와 같은 모양을 가짐
+
+- 각 상자는 객체이며 개발자는 이 객체와 상호작용하여 어떤 HTML 태그를 나타내는지, 어떤 콘텐츠가 포함되어 있는지 등을 알아낼 수 있음
+
+- 이 표현을 Document Object Model, 또는 줄여 DOM이라고 부름
 
 ### DOM The Document Object Model
 
@@ -378,6 +400,9 @@ console.log(x) // 1
 - 제공한 선택자와 일치하는 여러 element를 선택
 
 - 제공한 선택자를 만족하는 NodeList를 반환
+
+> NodeList는 배열이나 리스트로 생각
+>
 
 ### DOM 선택 실습
 
@@ -525,3 +550,101 @@ console.log(x) // 1
 
 - `querySelectorAll()`에 의해 반환되는 NodeList는 DOM의 변경사항을 실시간으로 반영하지 않음
     - DOM이 나중에 변경되더라도 이전에 이미 선택한 NodeList 값은 변하지 않음
+
+### Element
+
+- Node의 하위 유형
+
+- Element는 DOM 트리에서 HTML 요소를 나타내는 특별한 유형의 Node
+
+- 예를 들어 `<p>`, `<div>`, `<span>`, `<body>` 등의 HTML 태그들이 Element 노드를 생성
+
+- Node의 속성과 메서드를 모두 가지고 있으며 추가적으로 요소 특화된 기능(`className`, `innerHTML`, `id` 등)을 가지고 있음
+
+- 모든 Element는 Node이지만, 모든 Node가 Element인 것은 아님
+
+### Parsing 구문 분석, 해석
+
+- 브라우저가 문자열을 해석하여 DOM Tree로 만드는 과정
+
+### 세미콜론 (semicolon)
+
+- 자바스크립트는 문장 마지막 세미콜론(’ ; ‘)을 선택적으로 사용 가능
+
+- 세미콜론이 없으면 ASI에 의해 자동으로 세미콜론이 삽입됨
+    - ASI (Automatic Semicolon Insertion, 자동 세미콜론 삽입 규칙)
+
+- JavaScript를 만든 Brendan Eich 또한 세미콜론 작성을 반대
+
+### 변수 선언 키워드 - `var`
+
+- ES6 이전에 변수 선언에 사용했던 키워드
+
+- 재할당 가능
+
+- 재선언 가능
+
+- 함수 스코프(function scope)를 가짐
+
+- “호이스팅”되는 특성으로 인해 예기치 못한 문제 발생 가능
+    - 선언하기 전 사용할 수 있음
+
+- 변수 선언 시 `var`, `const`, `let` 키워드 중 하나를 사용하지 않으면 자동으로 `var`로 선언됨
+
+### 함수 스코프 function scope)
+
+- 함수의 중괄호 내부를 가리킴
+
+- 함수 스코프를 가지는 변수는 함수 바깥에서 접근 불가능
+
+```jsx
+function foo() {
+	var x = 1
+	console.log(x) // 1
+}
+
+console.log(x) // ReferenceError: x is not defined
+```
+
+### 호이스팅 Hoisting
+
+- 변수 선언이 끌어올려 지는 현상
+    - `var`로 선언한 변수는 선언 위치와 상관없이 함수 시작 지점, 전역에서는 코드가 시작될 때 처리됨
+
+- 변수에 무언가를 할당하기 전까지 undefined를 가짐
+    
+    ```jsx
+    console.log(name) // undefined
+    
+    var name = '홍길동' // 선언 및 할당
+    ```
+    
+    - 에러가 발생하지 않는다.
+    
+    - `var`은 선언과 동시에 초기화가 진행되기 때문
+    
+    ```jsx
+    // 위 코드와 동일하게 동작
+    var name
+    console.log(name) // undefined
+    
+    var name = '홍길동'
+    ```
+    
+- `let`과 `const`로 선언된 변수도 기술적으로는 호이스팅 되지만, 변수가 만들어지는 내부 과정이 다르기 때문에 이 문제를 방지할 수 있음
+
+- TDZ로 인해 초기화 전에 접근할 수 없음
+    
+    ```jsx
+    console.log(age) // ReferenceError: Cannot access 'age' before initialization
+    let age = 30
+    
+    console.log(height) // ReferenceError: Cannot access 'height' before initialization
+    const height = 170
+    ```
+    
+    - `let` 과 `const`는 선언, 초기화, 할당이  3 단계로 이루어져있다.
+    
+    - `let`과 `const`는 호이스팅이 발생하지만 TDZ(Temporal Dead Zone) (주석값이 존재하지 않는 죽은 영역) 때문에 에러가 발생
+
+- 결론은 `var`을 사용하지 마라.
