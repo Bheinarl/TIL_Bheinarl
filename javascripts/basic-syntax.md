@@ -231,14 +231,34 @@ console.log('1' == 1) // true
 console.log(0 == false) // true
 ```
 
+### 일치 연산자 ( === )
+
+- 두 피연산자의 값과 타입이 모두 같은 경우 true를 반환
+
+- 같은 객체를 가리키거나, 같은 타입이면서 같은 값인지를 비교
+
+- 엄격한 비교가 이뤄지며 암묵적 타입 변환이 발생하지 않음
+
+- 특수한 경우를 제외하고는 동등 연산자가 아닌 **일치 연산자 사용 권장**
+
+```jsx
+console.log(1 === 1) // true
+console.log('hello' === 'hello') // true
+console.log('1' === 1) // false
+console.log(0 === false) // false
+console.log([1] === 1) // false
+```
+
 ### 논리 연산자
 
 - and 연산
     - &&
 
 - or 연산
+    - ||
 
 - not 연산
+    - !
 
 - 단축 평가 지원
 
@@ -278,7 +298,7 @@ if (name === 'admin') {
 } else if (name === 'customer') {
 	console.log('고객님 환영해요')
 } else {
-	console.log('반갑습니다. ${name}님')
+	console.log(`반갑습니다. ${name}님`)
 }
 ```
 
