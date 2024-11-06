@@ -227,7 +227,7 @@
     ![여러_요소에_대한_v-if_적용_1](./images/여러_요소에_대한_v-if_적용_1.png)
     
 
-### HTML <template> element
+### HTML `<template>` element
 
 - 페이지가 로드될 때 렌더링 되지 않지만 JavaScript를 사용하여 나중에 문서에서 사용할 수 있도록 하는 HTML을 보유하기 위한 메커니즘
 

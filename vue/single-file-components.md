@@ -61,6 +61,11 @@
     }
     </style>
     ```
+
+    > component가 많아지면 트리 형태로 만들어질꺼고, 그렇다면 부모 component의 스타일이 넘어올 수도 있다.
+    >
+    > `scope`는 이를 방지하고자 이 component에서만 동작시키기 위함
+    >
     
 
 ### SFC 구성요소
@@ -269,6 +274,11 @@
 - 프로젝트가 실행될 때 필요한 라이브러리와 패키지들을 포함
 
 - `.gitignore`에 작성됨
+    
+    > `node_modules`도 `venv`처럼 용량이 엄청 크기 때문에 올리지 않는다.
+    >
+    > `node_modules`는 `package.json`  에 의해 설치된다. (`venv`의 `requirements.txt`와 같은 역할)
+    >
 
 ### package-lock.json
 
@@ -346,6 +356,9 @@
     - Vue 앱이 SPA인 이유
 
 - 필요한 스타일 시트, 스크립트 등의 외부 리소스를 로드 할 수 있음 (ex. bootstrap CDN)
+
+> vue는 페이지가 하나이다.
+>
 
 ### 기타 설정 파일
 
@@ -509,6 +522,9 @@
 
 ### 내부 렌더링 과정
 
+> 우리가 실제로 보는 부분은 ‘실제 DOM’ 부분
+>
+
 ![내부_렌더링_과정_1](./images/내부_렌더링_과정_1.png)
 
 ### Virtual DOM 패턴의 장점
@@ -551,6 +567,9 @@
     });
     </script>
     ```
+
+    > null이 출력되는 것이 아니라 input을 선택한 것이다.
+    > 
     
 
 ### Vue를 작성하는 2가지 스타일
@@ -620,6 +639,10 @@
 
 ### Composition API와 Option API 비교
 
+> 객체를 구성하는 것이 쉽지 않다.
+> Composition API가 현재 사용하는 구조.
+>
+
 ### API별 권장 사항
 
 - `Composition API` + `SFC`
@@ -655,6 +678,9 @@
       </div>
     </template>
     ```
+
+    > component가 1개라는 것을 한 눈에 볼 수 있다
+    >
     
 
 ### SFC의 CSS 기능 - scoped
@@ -703,6 +729,9 @@
     ```
     
     ![sfc의_css_기능_scoped_1](./images/sfc의_css_기능_scoped_1.png)
+
+    > class를 사용하여 자식 Component까지 넘어가지 않게 사용하자
+    >
     
 
 ### scoped 속성 사용을 권장
