@@ -31,7 +31,10 @@
 
 - 부모 속성이 업데이트되면 자식으로 전달되지만 그 반대는 안됨
 
-- 즉, 자식 컴포넌트 내부에서 props를 변경하려고 시도해서는 안되며 불가능
+- 즉, 자식 컴포넌트 내부에서 `props`를 변경하려고 시도해서는 안되며 불가능
+    
+    > 내려받는 것만 가능하며, 내려 받은 것은 수정 불가
+    >
 
 - 또한 부모 컴포넌트가 업데이트될 때마다 이를 사용하는 자식 컴포넌트의 모든 props가 최신 값으로 업데이트 됨
 
@@ -46,6 +49,10 @@
 - 하위 컴포넌트가 실수로 상위 컴포넌트의 상태를 변경하여 앱에서의 데이터 흐름을 이해하기 어렵게 만드는 것을 방지하기 위함
 
 - 데이터 흐름의 일관성 및 단순화
+
+> 양방향이라면 어느 부분에서 수정이 되서 오류가 발생했는지 알 수 없다.
+> 단방향이라면 한 부분에만 데이터가 존재하므로 오류가 발생한 부분을 쉽게 찾을 수 있다.
+>
 
 ### 사전 준비
 
@@ -318,7 +325,11 @@
     	 myMsg: String,
     	})
     ```
-    
+
+> 자식 컴포넌트는 HTML에서 사용되기때문에 `kebab-case`, 선언 및 템플릿 참조 시에는 JavaScript에서 사용되기 때문에 `camelCase`로 작성
+> 
+> `kebab-case`에서 `-m` 과 같이 `-`가 붙으면, `camelCase`에서는 다음 문자를 대문자로 변경
+>    
 
 ### Static props & Dynamic props
 
@@ -757,3 +768,64 @@ $emit(event, ...args)
       emit('submit', { email, password })
     }
     ```
+
+### 주의사항
+
+- 메서드와 `emit` 이벤트의 이벤트 이름과 이름은 달라도 된다.
+    
+    > ParentChild.vue
+    > 
+    
+    ```jsx
+    <template>
+      <div>
+        <button @click="함수">이름 변경</button>
+      </div>
+    </template>
+    
+    <script setup>
+    
+    const emit = defineEmits([
+      '이벤트',
+    ]
+    
+    const '함수' = function () {
+      emit('이벤트', ('바꿀 인자'))
+    }
+    </script>
+    
+    <style scoped>
+    
+    </style>
+    ```
+    
+    > Parent.vue
+    > 
+    
+    ```jsx
+    <template>
+      <div>
+        <ParentChild
+          @'이벤트'="함수"
+        />
+      </div>
+    </template>
+    
+    <script setup>
+    import ParentChild from '@/components/ParentChild.vue
+    
+    const '함수' = function () {
+      '함수 내용'
+    }
+    </script>
+    
+    <style scoped>
+    
+    </style>
+    ```
+    
+    > 위 두개의 코드에서 함수와 이벤트를 구분할 수 있도록 함
+    > 
+    > 중앙 저장소를 만들어서 트리 구조 모두에게 접근 가능할 수 있게 할 수 있다.
+    > 하지만 이게 무조건 옳은 방법은 아님
+    >
