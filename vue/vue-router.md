@@ -475,6 +475,9 @@
 
 - 컴포넌트 간 부모 - 자식 관계 관점이 아닌 URL에서의 중첩된 관계를 표현하는 관점으로 바라보기
 
+> 애초에 상하관계가 아니다. import해서 사용하는 것이 아니라 그냥 안쪽에 다른 컴포넌트를 보여주는 것 뿐이다.
+>
+
 ### Programmatic Navigation
 
 - `RouterLink` 대신 JavaScript를 사용해 페이지를 이동하는 것
@@ -492,6 +495,9 @@
 
 - 현재 위치 바꾸기
     - `router.replace()`
+
+> 뒤로 가기가 가능하냐 불가능하냐의 차이
+>
 
 ### `router.push()`
 
@@ -780,6 +786,8 @@ router.beforeEach((to, from) => {
     
     ![router_beforeenter_예시_1](./images/router_beforeenter_예시_1.png)
     
+    > user/1/ → user/2/ 로 이동할 때에는 X
+    >
 
 ### router.beforeEnter 활용
 
