@@ -538,6 +538,10 @@
 
 - `push` 메서드와 달리 history stack에 새로운 항목을 push하지 않고 다른 URL로 이동
     - 이동 전 URL로 뒤로 가기 불가
+    
+    | 선언적 표현 | 프로그래밍적 표현 |
+    | --- | --- |
+    | `<RouterLink :to=”…” replace>` | `router.replace(…)` |
 
 ### router.replace 활용
 
